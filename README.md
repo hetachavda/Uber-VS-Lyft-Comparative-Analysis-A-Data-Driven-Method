@@ -1,4 +1,4 @@
-# Uber-VS-Lyft-Comparative-Analysis-A-Data-Driven-Method
+
 # 🚖 Uber vs Lyft Comparative Analysis  
 
 A **data-driven study** comparing **Uber** and **Lyft** pricing strategies, user switching behavior, and market demand trends. This project applies **statistical methods** to uncover insights into ride-sharing competition and customer decision-making.  
