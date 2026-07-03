@@ -1,0 +1,128 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg"
+     font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <linearGradient id="head" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a3aa7"/>
+      <stop offset="100%" stop-color="#e87ba4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="820" fill="#f9f9f7"/>
+
+  <!-- header -->
+  <rect x="0" y="0" width="1200" height="86" fill="url(#head)"/>
+  <text x="30" y="42" font-size="26" font-weight="700" fill="#ffffff">Uber vs Lyft — Comparative Analysis Dashboard</text>
+  <text x="30" y="70" font-size="15" fill="#f3d9e6">~650K Boston rides · Nov–Dec 2018 · statistical testing</text>
+
+  <!-- KPI tiles -->
+  <rect x="30" y="110" width="360" height="110" rx="10" fill="#ffffff" stroke="rgba(11,11,11,0.10)"/>
+  <rect x="30" y="110" width="6" height="110" rx="3" fill="#2a78d6"/>
+  <text x="58" y="148" font-size="14" font-weight="600" fill="#898781" letter-spacing="1">UBER AVG FARE</text>
+  <text x="56" y="198" font-size="46" font-weight="700" fill="#0b0b0b">$15.80</text>
+
+  <rect x="420" y="110" width="360" height="110" rx="10" fill="#ffffff" stroke="rgba(11,11,11,0.10)"/>
+  <rect x="420" y="110" width="6" height="110" rx="3" fill="#e87ba4"/>
+  <text x="448" y="148" font-size="14" font-weight="600" fill="#898781" letter-spacing="1">LYFT AVG FARE</text>
+  <text x="446" y="198" font-size="46" font-weight="700" fill="#0b0b0b">$17.40</text>
+
+  <rect x="810" y="110" width="360" height="110" rx="10" fill="#ffffff" stroke="rgba(11,11,11,0.10)"/>
+  <rect x="810" y="110" width="6" height="110" rx="3" fill="#eda100"/>
+  <text x="838" y="148" font-size="14" font-weight="600" fill="#898781" letter-spacing="1">TRIPS 1–3 MILES</text>
+  <text x="836" y="198" font-size="46" font-weight="700" fill="#0b0b0b">64%</text>
+
+  <!-- Fare comparison (two bars) -->
+  <rect x="30" y="250" width="365" height="300" rx="10" fill="#ffffff" stroke="rgba(11,11,11,0.10)"/>
+  <circle cx="48" cy="282" r="5" fill="#e87ba4"/>
+  <text x="62" y="287" font-size="16" font-weight="700" fill="#0b0b0b">Average Fare by Platform</text>
+
+  <line x1="80" y1="490" x2="360" y2="490" stroke="#c3c2b7" stroke-width="1.5"/>
+  <!-- Uber -->
+  <rect x="120" y="326" width="90" height="164" rx="4" fill="#2a78d6"/>
+  <text x="165" y="316" font-size="14" font-weight="700" fill="#184f95" text-anchor="middle">$15.80</text>
+  <text x="165" y="512" font-size="13" fill="#52514e" text-anchor="middle">Uber</text>
+  <!-- Lyft -->
+  <rect x="245" y="310" width="90" height="180" rx="4" fill="#e87ba4"/>
+  <text x="290" y="300" font-size="14" font-weight="700" fill="#c85684" text-anchor="middle">$17.40</text>
+  <text x="290" y="512" font-size="13" fill="#52514e" text-anchor="middle">Lyft</text>
+  <text x="220" y="535" font-size="11" fill="#898781" text-anchor="middle">Lyft ~10% pricier — difference statistically significant</text>
+
+  <!-- Trip distance distribution -->
+  <rect x="415" y="250" width="365" height="300" rx="10" fill="#ffffff" stroke="rgba(11,11,11,0.10)"/>
+  <circle cx="433" cy="282" r="5" fill="#2a78d6"/>
+  <text x="447" y="287" font-size="16" font-weight="700" fill="#0b0b0b">Trip Distance Distribution</text>
+
+  <line x1="465" y1="490" x2="765" y2="490" stroke="#c3c2b7" stroke-width="1.5"/>
+  <!-- bars: 1-3mi dominant (64%) -->
+  <rect x="490" y="380" width="55" height="110" rx="4" fill="#86b6ef"/>
+  <text x="517" y="512" font-size="11.5" fill="#52514e" text-anchor="middle">0–1</text>
+
+  <rect x="560" y="318" width="55" height="172" rx="4" fill="#184f95"/>
+  <text x="587" y="308" font-size="13" font-weight="700" fill="#184f95" text-anchor="middle">64%</text>
+  <text x="587" y="512" font-size="11.5" fill="#52514e" text-anchor="middle">1–3</text>
+
+  <rect x="630" y="410" width="55" height="80" rx="4" fill="#5598e7"/>
+  <text x="657" y="512" font-size="11.5" fill="#52514e" text-anchor="middle">3–5</text>
+
+  <rect x="700" y="452" width="55" height="38" rx="4" fill="#86b6ef"/>
+  <text x="727" y="512" font-size="11.5" fill="#52514e" text-anchor="middle">5+</text>
+  <text x="615" y="535" font-size="11" fill="#898781" text-anchor="middle">Miles per trip — short rides dominate demand</text>
+
+  <!-- Price vs Distance scatter (weak correlation) -->
+  <rect x="800" y="250" width="370" height="300" rx="10" fill="#ffffff" stroke="rgba(11,11,11,0.10)"/>
+  <circle cx="818" cy="282" r="5" fill="#eda100"/>
+  <text x="832" y="287" font-size="16" font-weight="700" fill="#0b0b0b">Price vs Distance (r = 0.345)</text>
+
+  <line x1="850" y1="490" x2="1140" y2="490" stroke="#c3c2b7" stroke-width="1.5"/>
+  <line x1="850" y1="490" x2="850" y2="320" stroke="#c3c2b7" stroke-width="1.5"/>
+  <text x="995" y="518" font-size="12" fill="#52514e" text-anchor="middle">Distance →</text>
+  <text x="832" y="405" font-size="12" fill="#52514e" text-anchor="middle" transform="rotate(-90 832 405)">Price →</text>
+
+  <!-- scattered points: weak upward, high variance -->
+  <g fill="#2a78d6" opacity="0.85">
+    <circle cx="878" cy="452" r="5"/><circle cx="900" cy="470" r="5"/><circle cx="915" cy="430" r="5"/>
+    <circle cx="935" cy="448" r="5"/><circle cx="955" cy="410" r="5"/><circle cx="972" cy="445" r="5"/>
+    <circle cx="990" cy="400" r="5"/><circle cx="1010" cy="428" r="5"/><circle cx="1030" cy="388" r="5"/>
+    <circle cx="1048" cy="415" r="5"/><circle cx="1068" cy="372" r="5"/><circle cx="1090" cy="398" r="5"/>
+    <circle cx="1108" cy="360" r="5"/><circle cx="892" cy="410" r="5"/><circle cx="1050" cy="452" r="5"/>
+  </g>
+  <!-- weak trend line -->
+  <line x1="865" y1="455" x2="1120" y2="378" stroke="#eda100" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <text x="995" y="540" font-size="11" fill="#898781" text-anchor="middle">Weak-to-moderate link — distance alone doesn't set fare · points illustrative</text>
+
+  <!-- Statistical tests summary -->
+  <rect x="30" y="580" width="1140" height="210" rx="10" fill="#ffffff" stroke="rgba(11,11,11,0.10)"/>
+  <circle cx="48" cy="612" r="5" fill="#4a3aa7"/>
+  <text x="62" y="617" font-size="16" font-weight="700" fill="#0b0b0b">Statistical Test Outcomes</text>
+
+  <!-- 4 test cards -->
+  <rect x="45" y="640" width="265" height="128" rx="8" fill="#f9f9f7" stroke="rgba(11,11,11,0.08)"/>
+  <rect x="45" y="640" width="6" height="128" rx="3" fill="#2a78d6"/>
+  <text x="66" y="670" font-size="14" font-weight="700" fill="#0b0b0b">Chi-Square</text>
+  <text x="66" y="694" font-size="12.5" fill="#52514e">User distribution differs</text>
+  <text x="66" y="716" font-size="12.5" fill="#52514e">strongly between platforms.</text>
+  <text x="66" y="750" font-size="12" font-weight="700" fill="#1baf7a">Significant</text>
+
+  <rect x="330" y="640" width="265" height="128" rx="8" fill="#f9f9f7" stroke="rgba(11,11,11,0.08)"/>
+  <rect x="330" y="640" width="6" height="128" rx="3" fill="#e87ba4"/>
+  <text x="351" y="670" font-size="14" font-weight="700" fill="#0b0b0b">Two-Sample T-Test</text>
+  <text x="351" y="694" font-size="12.5" fill="#52514e">Uber vs Lyft fares differ</text>
+  <text x="351" y="716" font-size="12.5" fill="#52514e">($15.80 vs $17.40).</text>
+  <text x="351" y="750" font-size="12" font-weight="700" fill="#1baf7a">Significant</text>
+
+  <rect x="615" y="640" width="265" height="128" rx="8" fill="#f9f9f7" stroke="rgba(11,11,11,0.08)"/>
+  <rect x="615" y="640" width="6" height="128" rx="3" fill="#eda100"/>
+  <text x="636" y="670" font-size="14" font-weight="700" fill="#0b0b0b">ANOVA</text>
+  <text x="636" y="694" font-size="12.5" fill="#52514e">Fare by distance range —</text>
+  <text x="636" y="716" font-size="12.5" fill="#52514e">no platform difference.</text>
+  <text x="636" y="750" font-size="12" font-weight="700" fill="#898781">Not significant</text>
+
+  <rect x="900" y="640" width="265" height="128" rx="8" fill="#f9f9f7" stroke="rgba(11,11,11,0.08)"/>
+  <rect x="900" y="640" width="6" height="128" rx="3" fill="#4a3aa7"/>
+  <text x="921" y="670" font-size="14" font-weight="700" fill="#0b0b0b">Logistic Regression</text>
+  <text x="921" y="694" font-size="12.5" fill="#52514e">Price affects user choice,</text>
+  <text x="921" y="716" font-size="12.5" fill="#52514e">but with small effect size.</text>
+  <text x="921" y="750" font-size="12" font-weight="700" fill="#eda100">Weak effect</text>
+
+  <!-- footer -->
+  <text x="30" y="808" font-size="12" fill="#898781">Heta Chavda · Data Analytics Portfolio · github.com/hetachavda</text>
+</svg>
